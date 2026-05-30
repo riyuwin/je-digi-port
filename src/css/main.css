@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 *{
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 body{  
     /* background-color: #faf9f9; */
-    background-color: #faf9f9;
+    /* background-color: #f7f7f7; */ 
+    background-color: #222222;
+    /* background-color: #252525; */
+
+    /* background: linear-gradient(135deg, #111827, #000000); */
+    
 }
 
 .bg_container{ 
@@ -49,7 +60,7 @@ body{
     font-weight: 600;
     letter-spacing: 0.1px;
     font-size: 20px;
-    color: #646AF6;
+    color: #ffffff;
 }
 
 .profile_container{
@@ -91,7 +102,7 @@ body{
 }
 
 .btn_white_text{
-    color: white;
+    color: rgb(39, 39, 39);
 }
 
 
@@ -139,5 +150,94 @@ body{
 }
 
 .logo_text{
-    color: #7178f3;
+    color: #000dff;
+}
+
+.nav_color{
+    color: rgb(39, 39, 39);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.topNav {
+    border-radius: 50px;
+    outline: none; 
+    transition: all 0.3s ease; 
+}
+.topNav a {
+    color: black;
+    text-decoration: none;
+}
+
+.jan_name_text{
+    color: black;
+}
+
+.about_container{ 
+    height: 75vh;
+    padding: 10px 50px;
+    /* outline: 1px solid red;   */
+}
+
+.main_container{
+    /* outline: 1px solid red;   */
+    background-color: #ffffff;
+}
+
+.category_container{
+    outline: 1px solid rgb(238, 238, 238);
+}
+
+.shaded_container{
+    background-color: #f8f8f8;
+}
+
+.body_container{ 
+    background-color: #ffffff;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    /* outline: 1px solid red; */
+}
+
+.resume_btn{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+
+.resume_btn:hover{
+    background-color: rgb(90, 89, 89);
+    color: rgb(32, 32, 32);
+}
+
+.heading1{
+    font-size: 6vh
+}
+
+.heading2{
+    font-size: 2vh
+}
+
+.project_container{
+    background-color: rgb(247, 247, 247);  
+}
+
+.project_container_img{ 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* smooth shadow */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.skill_container{
+    outline: 1px solid rgb(216, 216, 216);
 }

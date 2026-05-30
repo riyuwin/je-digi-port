@@ -19,9 +19,9 @@ export default function AboutMeContent() {
                         <div className=" w-full flex flex-col items-center md:items-center text-center md:text-center">
                             <div className="profile_container_padding flex flex-col items-center md:items-center text-center md:text-center">
 
-                                <a href="/img/grad_pic_cropped.jpg" target="_blank" rel="noopener noreferrer">
+                                <a href="/img/janjan_pics.png" target="_blank" rel="noopener noreferrer">
                                     <img
-                                        src="./img/grad_pic_cropped.jpg"
+                                        src="./img/janjan_pics.png"
                                         alt="Profile"
                                         className="mt-20 mb-6 w-48 h-48 rounded-full shadow-lg object-cover cursor-pointer transition-transform duration-200 hover:scale-105"
                                         onClick={() => setIsOpen(true)}
@@ -76,9 +76,9 @@ export default function AboutMeContent() {
                             <h1 className="hello_text text-5xl font-bold text-gray-900">Hello there!</h1>
                             <p className="caption_text mt-4 text-xl text-gray-800">This is my digital portfolio.</p>
                             <p className="mt-4 text-base text-gray-600">
-                                This digital portfolio showcases my past projects, which were developed through subject
-                                requirements and commissioned projects. These projects include web applications, mobile
-                                applications, Arduino projects, graphic designs, and documentation of consultation
+                                This digital portfolio showcases my past projects, which were developed through commissioned projects 
+                                as well as to my subject requirements. These projects include web applications, mobile
+                                applications, Arduino and IoT Based projects, 2d and 3D graphic designs, and documentation of consultation
                                 meetings.
                             </p>
                             <p className="mt-4 text-base text-gray-600">

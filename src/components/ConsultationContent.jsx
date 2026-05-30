@@ -54,6 +54,40 @@ function ConsultationContent() {
 
                         <div className="max-w-4xl mx-auto text-center md:text-left">
 
+                            <p className="project_title_text mt-2 text-xl text-gray-800">Face-to-Face Meetings</p>
+ 
+                        </div>
+
+                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 p-4 justify-items-center">
+                            {/* Item 1 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/consultation_1.png" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/consulation_e_salaymat.jpg"
+                                        alt="Consultation 1"
+                                    />
+                                </a>
+                            </div>
+
+                            {/* Item 2 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/consulation_e_salaymat1.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/consultation_stenomate.jpg"
+                                        alt="Consultation 2"
+                                    />
+                                </a>
+                            </div> 
+                        </div>
+ 
+                    </div>
+
+                    <div className="fade_up_anim relative w-full">
+
+                        <div className="max-w-4xl mx-auto text-center md:text-left">
+
                             <p className="project_title_text mt-2 text-xl text-gray-800">Online Meetings</p>
  
                         </div>

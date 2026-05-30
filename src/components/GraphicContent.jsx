@@ -61,6 +61,70 @@ function GraphicContent() {
                             </p>
                         </div>
 
+                        <div className="max-w-4xl mx-auto text-center md:text-center">
+
+                            <p className="project_title_text mt-20 text-xl text-gray-800">3D House Rendered</p>
+ 
+                        </div>
+
+                        <div className="mt-10 projects_container bg-gray-100 flex flex-row justify-center items-center gap-20 p-4 flex-wrap">
+                            <div>
+                                <a href="/img/house_4.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="web_images mt-10 w-110 shadow-lg object-cover cursor-pointer transform transition-transform duration-200 hover:scale-105 "
+                                        src="/img/house_4.jpg"
+                                        alt="Rapid 1"
+                                    />
+                                </a>
+
+                                <p className="project_title_image_text mt-5 mb-0 text-base text-gray-900">
+                                    Outside
+                                </p>
+                            </div>
+
+                             <div>
+                                <a href="/img/house_2.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="web_images mt-10   w-110 shadow-lg object-cover cursor-pointer transform transition-transform duration-200 hover:scale-105 "
+                                        src="/img/house_2.jpg"
+                                        alt="Rapid 1"
+                                    />
+                                </a>
+
+                                <p className="project_title_image_text mt-5 mb-0 text-base text-gray-900">
+                                    Bedroom
+                                </p>
+                            </div>
+
+                             <div>
+                                <a href="/img/house_5.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="web_images mt-0   w-110 shadow-lg object-cover cursor-pointer transform transition-transform duration-200 hover:scale-105 "
+                                        src="/img/house_5.jpg"
+                                        alt="Rapid 1"
+                                    />
+                                </a>
+
+                                <p className="project_title_image_text mt-5 mb-10 text-base text-gray-900">
+                                    Living Room
+                                </p>
+                            </div>
+                            
+                             <div>
+                                <a href="/img/house_7.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="web_images mt-0   w-110 shadow-lg object-cover cursor-pointer transform transition-transform duration-200 hover:scale-105 "
+                                        src="/img/house_7.jpg"
+                                        alt="Rapid 1"
+                                    />
+                                </a>
+
+                                <p className="project_title_image_text mt-5 mb-10 text-base text-gray-900">
+                                    Restroom
+                                </p>
+                            </div>
+                        </div>
+
                         <div className="max-w-4xl mt-10 mx-auto text-center md:text-center"> 
                             <p className="project_title_text mt-2 text-l text-gray-700">Rice Miller</p> 
                         </div> 
@@ -98,7 +162,7 @@ function GraphicContent() {
                                     />
                                 </a>
                             </div>
-                        </div> 
+                        </div>  
                         
                         <div className="max-w-4xl mt-10 mx-auto text-center md:text-center"> 
                             <p className="project_title_text mt-2 text-l text-gray-700">Tetrapods</p> 

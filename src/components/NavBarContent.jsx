@@ -6,8 +6,8 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'About', to: '/' },
-  { name: 'Resume', to: '/resume' },
+  { name: 'Home', to: '/' },
+  /* { name: 'Resume', to: '/resume' }, */
   { name: 'Projects', to: '/projects' },
   { name: 'Contacts', to: '/contacts' },
 ]
@@ -20,7 +20,10 @@ export default function NavBarContent() {
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+
+
+        
+        <nav aria-label="Global" className="topNav flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             {/* <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -64,7 +67,7 @@ export default function NavBarContent() {
                 <Link
                   key={item.name}
                   to={item.to}
-                  className={`text-sm font-semibold transition-colors ${isActive ? 'text-black' : 'text-gray-700 hover:text-black'
+                  className={`nav_color text-sm font-semibold transition-colors ${isActive ? 'text-black' : 'nav_color text-gray-700 hover:text-black'
                     }`}
                 >
                   {item.name}

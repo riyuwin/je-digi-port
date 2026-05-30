@@ -14,11 +14,7 @@ function ArduinoContent() {
         <>
             <NavBarContent />
             <div className="background_container mt-15 bg-white w-full px-4 sm:px-8 lg:px-8">
-
-
                 <div className="grid_container grid grid-cols-1 md:grid-cols-1 gap-12 px-6 py-12 items-center max-w-7xl mx-auto">
-
-
                     {/* Right Column - Text Content */}
                     <div className="fade_up_anim relative w-full">
 
@@ -26,7 +22,7 @@ function ArduinoContent() {
                             <div className="mt-0 flex justify-between items-center flex-wrap md:flex-nowrap gap-12">
 
                                 <h5 className="text-5xl font-bold text-gray-900">
-                                    Arduino Projects
+                                    Arduino Projects and IoT Projects
                                 </h5>
 
                             </div>
@@ -35,18 +31,11 @@ function ArduinoContent() {
                                 In this section, the documentation of my arduino based IoT projects development will be showcased.
                             </p>
                         </div>
-
-
                     </div>
                 </div>
-
-
-
-
             </div>
 
             <div className="background_container mt-15 mb-20 bg-white w-full px-4 sm:px-8 lg:px-8">
-
 
                 <div className="grid_container grid grid-cols-1 md:grid-cols-1 gap-12 px-6 py-12 items-center max-w-7xl mx-auto">
 
@@ -108,6 +97,50 @@ function ArduinoContent() {
 
                         <div className="mt-20 max-w-4xl mx-auto text-center md:text-left">
 
+                            <p className="project_title_text mt-2 text-xl text-gray-800">SOLQUA: Smart Water Filtration System</p>
+
+                            <p className="mt-10 text-base text-gray-900">
+                                The SOLQUA: Smart Water Filtration System is a commissioned IoT project. The device is powered by ESP8266 and it has mobile application that are connected to the internet and a Firebase database, which serves as the platform for data transmission. The application was developed using Android Studio, while the device was programmed in the Arduino IDE.
+                            </p>
+                        </div>
+
+                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-4 justify-items-center">
+                            {/* Item 1 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/ikonek_1.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120 mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/ikonek_1.jpg"
+                                        alt="Gloves 1"
+                                    />
+                                </a> 
+                            </div>
+
+                            {/* Item 2 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/ikonek_6.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120 mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/ikonek_6.jpg"
+                                        alt="Gloves 2"
+                                    />
+                                </a> 
+                            </div>
+
+                            {/* Item 3 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/ikonek_3.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120 mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/ikonek_3.jpg"
+                                        alt="Gloves 3"
+                                    />
+                                </a> 
+                            </div>
+                        </div>
+
+                        <div className="mt-20 max-w-4xl mx-auto text-center md:text-left">
+
                             <p className="project_title_text mt-2 text-xl text-gray-800">Arduino-based Automatic Pill Dispenser using mobile application</p>
 
                             <p className="mt-10 text-base text-gray-900">
@@ -130,7 +163,7 @@ function ArduinoContent() {
                                 </p>
                             </div>
 
-                            <div className="mt-0 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-5 p-4 justify-items-center"> 
+                            <div className="mt-0 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-5 p-4 justify-items-center">
                                 {/* Item 2 */}
                                 <div className="projects_container flex flex-col items-center text-center">
                                     <a href="/img/pill_4.png" target="_blank" rel="noopener noreferrer">
@@ -160,8 +193,129 @@ function ArduinoContent() {
                                 </div>
                             </div>
 
-                        </div>  
+                        </div>
 
+                        <div className="max-w-4xl mt-20  mx-auto text-center md:text-left">
+
+                            <p className="project_title_text mt-2 text-xl text-gray-800">Smart Car</p>
+
+                            <p className="mt-10 text-base text-gray-900">
+                                The Smart Car is an Arduino-powered automated vehicle. It uses sensors and programmed controls to move, detect obstacles, and perform basic navigation tasks, showcasing the potential of automation through simple electronics and coding.
+                            </p>
+                        </div>
+
+                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-4 justify-items-center">
+                            {/* Item 1 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/smart_car_1.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120  object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/smart_car_1.jpg"
+                                        alt="Gloves 1"
+                                    />
+                                </a>
+                            </div>
+
+                            {/* Item 2 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/smart_car_2.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120  object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/smart_car_2.jpg"
+                                        alt="Gloves 2"
+                                    />
+                                </a>
+                            </div>
+
+                            {/* Item 3 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/smart_car_3.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120  object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/smart_car_3.jpg"
+                                        alt="Gloves 3"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="max-w-4xl mt-20  mx-auto text-center md:text-left">
+
+                            <p className="project_title_text mt-2 text-xl text-gray-800">Trike Fare Tracker</p>
+
+                            <p className="mt-10 text-base text-gray-900">
+                                The Trike Fare Tracker is a system designed to calculate and monitor tricycle fares accurately. It is integrated with a mobile application where passengers and drivers can view the fare calculation in real time, ensuring transparency and convenience.
+                            </p>
+                        </div>
+
+                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-4 justify-items-center">
+                            {/* Item 1 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/tike_fare_tracker_1.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120  object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/tike_fare_tracker_1.jpg"
+                                        alt="Gloves 1"
+                                    />
+                                </a>
+                            </div>
+
+                            {/* Item 2 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/tike_fare_tracker_2.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120  object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/tike_fare_tracker_2.jpg"
+                                        alt="Gloves 2"
+                                    />
+                                </a>
+                            </div>
+
+                            {/* Item 3 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/tike_fare_tracker_3.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-70 h-120  object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/tike_fare_tracker_3.jpg"
+                                        alt="Gloves 3"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div className="max-w-4xl mt-20  mx-auto text-center md:text-left">
+
+                            <p className="project_title_text mt-2 text-xl text-gray-800">Smart Irrigation</p>
+
+                            <p className="mt-10 text-base text-gray-900">
+                                The Smart Irrigation system is an automated watering solution powered by Arduino. It uses soil moisture sensors and programmed controls to monitor soil conditions and regulate water supply efficiently. This project aims to conserve water, reduce manual labor, and promote sustainable farming practices.
+                            </p>
+                        </div>
+
+                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-0 p-4 justify-items-center">
+                            {/* Item 1 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/smart_irrigation_1.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-90 h-120  object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/smart_irrigation_1.jpg"
+                                        alt="Gloves 1"
+                                    />
+                                </a>
+                            </div>
+
+                            {/* Item 2 */}
+                            <div className="projects_container flex flex-col items-center text-center">
+                                <a href="/img/smart_irrigation_2.jpg" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className="arduino_images mt-4 w-90 h-120  object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
+                                        src="/img/smart_irrigation_2.jpg"
+                                        alt="Gloves 2"
+                                    />
+                                </a>
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>

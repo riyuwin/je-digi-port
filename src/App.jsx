@@ -12,6 +12,7 @@ import MobApp from "./pages/MobApp";
 import Arduino from "./pages/Arduino";
 import Graphic from "./pages/Graphic";
 import Consultation from "./pages/Consultation";
+import Main from "./pages/Main";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,13 +23,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Auth Pages */}
-          <Route path="/" element={<AboutMe />} />   
+          <Route path="/" element={<Main />} />  
+          {/* <Route path="/" element={<AboutMe />} />    */}
           <Route path="/resume" element={<Resume />} />   
           <Route path="/projects" element={<Project />} />  
           <Route path="/contacts" element={<Contact />} />    
           <Route path="/web_dev" element={<WebDev />} /> 
           <Route path="/mob_app" element={<MobApp />} /> 
-          <Route path="/arduino" element={<Arduino />} />    
+          <Route path="/iot" element={<Arduino />} />    
           <Route path="/graphic" element={<Graphic />} />    
           <Route path="/consultation" element={<Consultation />} />       
 
