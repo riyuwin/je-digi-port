@@ -44,22 +44,26 @@ export default function MainContent() {
     const categories = [
         {
             title: 'Web Applications',
-            image: '/img/web_app_bg.png',
+            /* image: '/img/web_app_bg.png', */
+            image: `${import.meta.env.BASE_URL}img/web_app_bg.png`,
             link: '/web_dev'
         },
         {
             title: 'Mobile Applications',
-            image: '/img/mob_app_bg.png',
+            /* image: '/img/mob_app_bg.png', */
+            image: `${import.meta.env.BASE_URL}img/mob_app_bg.png`,
             link: '/mob_app'
         },
         {
             title: 'Graphic Designs',
-            image: '/img/graphic_design_bg.png',
+            /* image: '/img/graphic_design_bg.png', */
+            image: `${import.meta.env.BASE_URL}img/graphic_design_bg.png`,
             link: '/graphic'
         },
         {
             title: 'IoT Projects',
-            image: '/img/iot_bg.png',
+            /* image: '/img/iot_bg.png', */
+            image: `${import.meta.env.BASE_URL}img/iot_bg.png`,
             link: '/iot'
         }
     ]
