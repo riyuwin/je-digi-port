@@ -1,449 +1,582 @@
 'use client'
 
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import NavBarContent from './NavBarContent'
-import FooterContent from './FooterContent'
-
-function GraphicContent() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-    const [isOpen, setIsOpen] = useState(false);
-
-    return (
-        <>
-            <NavBarContent />
-            <div className="background_container mt-15 bg-white w-full px-4 sm:px-8 lg:px-8">
-
-
-                <div className="grid_container grid grid-cols-1 md:grid-cols-1 gap-12 px-6 py-12 items-center max-w-7xl mx-auto">
-
-
-                    {/* Right Column - Text Content */}
-                    <div className="fade_up_anim relative w-full">
-
-                        <div className="max-w-4xl mx-auto text-center md:text-left">
-                            <div className="mt-0 flex justify-between items-center flex-wrap md:flex-nowrap gap-12">
-
-                                <h5 className="text-5xl font-bold text-gray-900">
-                                    Graphic Designs
-                                </h5>
-
-                            </div>
-
-                            <p className="mt-8 text-base text-gray-600">
-                                In this section, the documentation of my graphic design will be showcased. I accept commission projects in graphic design, including 2D, 3D, and poster design. I create these using Adobe Photoshop, Illustrator, Blender, and 3ds Max.
-                            </p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-            <div className="background_container mt-15 mb-20 bg-white w-full px-4 sm:px-8 lg:px-8">
-
-
-                <div className="grid_container grid grid-cols-1 md:grid-cols-1 gap-12 px-6 py-12 items-center max-w-7xl mx-auto">
-
-                    <div className="fade_up_anim relative w-full">
-
-                        <div className="max-w-4xl mx-auto text-center md:text-left">
-
-                            <p className="project_title_text mt-2 text-xl text-gray-800">3D Projects</p>
-
-                            <p className="mt-10 text-base text-gray-900">
-                                These are the 3D project that I developed. It was a commissioned 3D design for research project and the 3D designs were developed using blender and 3ds Max.
-                            </p>
-                        </div>
-
-                        <div className="max-w-4xl mx-auto text-center md:text-center">
-
-                            <p className="project_title_text mt-20 text-xl text-gray-800">3D House Rendered</p>
- 
-                        </div>
-
-                        <div className="mt-10 projects_container bg-gray-100 flex flex-row justify-center items-center gap-20 p-4 flex-wrap">
-                            <div>
-                                <a href="/img/house_4.jpg" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="web_images mt-10 w-110 shadow-lg object-cover cursor-pointer transform transition-transform duration-200 hover:scale-105 "
-                                        src="/img/house_4.jpg"
-                                        alt="Rapid 1"
-                                    />
-                                </a>
-
-                                <p className="project_title_image_text mt-5 mb-0 text-base text-gray-900">
-                                    Outside
-                                </p>
-                            </div>
-
-                             <div>
-                                <a href="/img/house_2.jpg" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="web_images mt-10   w-110 shadow-lg object-cover cursor-pointer transform transition-transform duration-200 hover:scale-105 "
-                                        src="/img/house_2.jpg"
-                                        alt="Rapid 1"
-                                    />
-                                </a>
-
-                                <p className="project_title_image_text mt-5 mb-0 text-base text-gray-900">
-                                    Bedroom
-                                </p>
-                            </div>
-
-                             <div>
-                                <a href="/img/house_5.jpg" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="web_images mt-0   w-110 shadow-lg object-cover cursor-pointer transform transition-transform duration-200 hover:scale-105 "
-                                        src="/img/house_5.jpg"
-                                        alt="Rapid 1"
-                                    />
-                                </a>
-
-                                <p className="project_title_image_text mt-5 mb-10 text-base text-gray-900">
-                                    Living Room
-                                </p>
-                            </div>
-                            
-                             <div>
-                                <a href="/img/house_7.jpg" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="web_images mt-0   w-110 shadow-lg object-cover cursor-pointer transform transition-transform duration-200 hover:scale-105 "
-                                        src="/img/house_7.jpg"
-                                        alt="Rapid 1"
-                                    />
-                                </a>
-
-                                <p className="project_title_image_text mt-5 mb-10 text-base text-gray-900">
-                                    Restroom
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="max-w-4xl mt-10 mx-auto text-center md:text-center"> 
-                            <p className="project_title_text mt-2 text-l text-gray-700">Rice Miller</p> 
-                        </div> 
-
-                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5 p-4 justify-items-center">
-                            {/* Item 1 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/milling_1.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/milling_1.png"
-                                        alt="Gloves 1"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 2 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/milling_2.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/milling_2.png"
-                                        alt="Gloves 2"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 3 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/milling_3.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/milling_3.png"
-                                        alt="Gloves 3"
-                                    />
-                                </a>
-                            </div>
-                        </div>  
-                        
-                        <div className="max-w-4xl mt-10 mx-auto text-center md:text-center"> 
-                            <p className="project_title_text mt-2 text-l text-gray-700">Tetrapods</p> 
-                        </div>  
-
-                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-5 p-4 justify-items-center">
-                            {/* Item 1 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/tetrapods3.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/tetrapods3.png"
-                                        alt="Tetrapods 1"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 2 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/tetrapods2.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/tetrapods2.png"
-                                        alt="Tetrapods 2"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 3 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/tetrapods1.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/tetrapods1.png"
-                                        alt="Tetrapods 3"
-                                    />
-                                </a>
-                            </div> 
-                            {/* Item 4 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/tetrapods4.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/tetrapods4.png"
-                                        alt="Tetrapods 3"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-                        
-                        <div className="max-w-4xl mt-10 mx-auto text-center md:text-center"> 
-                            <p className="project_title_text mt-2 text-l text-gray-700">Pest Repellant</p> 
-                        </div>  
-
-                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-5 p-4 justify-items-center">
-                            {/* Item 1 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/pest1.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/pest1.png"
-                                        alt="Tetrapods 1"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 2 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/pest2.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/pest2.png"
-                                        alt="Tetrapods 2"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 3 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/pest3.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/pest3.png"
-                                        alt="Tetrapods 3"
-                                    />
-                                </a>
-                            </div> 
-                            {/* Item 4 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/pest4.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/pest4.png"
-                                        alt="Tetrapods 3"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="max-w-4xl mt-10 mx-auto text-center md:text-center"> 
-                            <p className="project_title_text mt-2 text-l text-gray-700">BeeHive Flow Frames</p> 
-                        </div>  
-
-                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-5 p-4 justify-items-center">
-                            {/* Item 1 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/FlowFrames2.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/FlowFrames2.png"
-                                        alt="Tetrapods 1"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 2 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/Beehive4.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/Beehive4.png"
-                                        alt="Tetrapods 2"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 3 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/Beehive2.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/Beehive2.png"
-                                        alt="Tetrapods 3"
-                                    />
-                                </a>
-                            </div> 
-                            {/* Item 4 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/Beehive11.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/Beehive11.png"
-                                        alt="Tetrapods 3"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div className="max-w-4xl mt-10 mx-auto text-center md:text-center"> 
-                            <p className="project_title_text mt-2 text-l text-gray-700">Mangroves Planter</p> 
-                        </div>  
-
-                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-5 p-4 justify-items-center">
-                            {/* Item 1 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/mangroves1.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/mangroves1.png"
-                                        alt="Tetrapods 1"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 2 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/mangroves2.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/mangroves2.png"
-                                        alt="Tetrapods 2"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 3 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/mangroves3.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/mangroves3.png"
-                                        alt="Tetrapods 3"
-                                    />
-                                </a>
-                            </div> 
-                            {/* Item 4 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/mangroves4.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/mangroves4.png"
-                                        alt="Tetrapods 3"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="max-w-4xl mt-10 mx-auto text-center md:text-center"> 
-                            <p className="project_title_text mt-2 text-l text-gray-700">3D Ship</p> 
-                        </div>  
-
-                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5 p-4 justify-items-center">
-                            {/* Item 1 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/ship_1.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/ship_1.png"
-                                        alt="Gloves 1"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 2 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/ship_2.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/ship_2.png"
-                                        alt="Gloves 2"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 3 */}
-                            <div className="projects_container flex flex-col items-center text-center">
-                                <a href="/img/ship_3.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="arduino_images mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/ship_3.png"
-                                        alt="Gloves 3"
-                                    />
-                                </a>
-                            </div>
-                        </div>
-
-                        <div className="mt-10 max-w-4xl mx-auto text-center md:text-left">
-
-                            <p className="project_title_text mt-2 text-xl text-gray-800">Posters</p>
-
-                            <p className="mt-10 text-base text-gray-900">
-                                I also experienced creating a posters for our documentary and film project which was developed using adobe photoshop and illustrator.
-                            </p>
-                        </div>
-
-                        <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 p-4 justify-items-center">
-                            {/* Item 1 */}
-                            <div className="flex items-center text-center">
-                                <a href="/img/tabi_tabi.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="projects_container mt-4 w-150  mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/tabi_tabi.png"
-                                        alt="Gloves 1"
-                                    />
-                                </a>
-                            </div>
-
-                            {/* Item 2 */}
-                            <div className="flex items-center text-center">
-                                <a href="/img/ningas.png" target="_blank" rel="noopener noreferrer">
-                                    <img
-                                        className="projects_container mt-4 w-150 mt-10 mb-10 object-cover shadow-lg cursor-pointer transform transition-transform duration-200 hover:scale-105"
-                                        src="/img/ningas.png"
-                                        alt="Gloves 2"
-                                    />
-                                </a>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-
-        </>
-    )
-
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import { motion, AnimatePresence } from 'framer-motion'
+
+// ICONS
+import { FaMoon, FaSun, FaTimes, FaCube } from 'react-icons/fa'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+
+// IMAGES - 3D HOUSE RENDERED
+import house1 from '/img/house_4.jpg'
+import house2 from '/img/house_2.jpg'
+import house3 from '/img/house_5.jpg'
+import house4 from '/img/house_7.jpg'
+
+// IMAGES - RICE MILLER
+import mill1 from '/img/milling_1.png'
+import mill2 from '/img/milling_2.png'
+import mill3 from '/img/milling_3.png'
+
+// IMAGES - TETRAPODS
+import tetrapod1 from '/img/tetrapods1.png'
+import tetrapod2 from '/img/tetrapods2.png'
+import tetrapod3 from '/img/tetrapods3.png'
+import tetrapod4 from '/img/tetrapods4.png'
+
+// IMAGES - PEST REPELLANT
+import pest1 from '/img/pest1.png'
+import pest2 from '/img/pest2.png'
+import pest3 from '/img/pest3.png'
+import pest4 from '/img/pest4.png'
+
+// IMAGES - BEEHIVE FLOW FRAMES
+import flowFrame1 from '/img/FlowFrames2.png'
+import flowFrame2 from '/img/Beehive4.png'
+import flowFrame3 from '/img/Beehive2.png'
+import flowFrame4 from '/img/Beehive11.png'
+
+// IMAGES - MANGROVES PLANTER
+import mangrove1 from '/img/mangroves1.png'
+import mangrove2 from '/img/mangroves2.png'
+import mangrove3 from '/img/mangroves3.png'
+import mangrove4 from '/img/mangroves4.png'
+
+// IMAGES - 3D SHIP
+import ship1 from '/img/ship_1.png'
+import ship2 from '/img/ship_2.png'
+import ship3 from '/img/ship_3.png'
+
+// IMAGES - POSTERS
+import poster1 from '/img/tabi_tabi.png'
+import poster2 from '/img/ningas.png'
+import poster3 from '/img/poster3.jpg'
+import poster4 from '/img/poster4.jpg'
+import poster5 from '/img/poster6.jpg'
+
+// Animation Variants
+const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5 } }
 }
 
-export default GraphicContent;
+const fadeInUp = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+}
+
+// Theme Toggle Component
+function ThemeToggle({ isDarkMode, setIsDarkMode }) {
+    return (
+        <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            className="fixed top-4 right-4 z-50 p-2 sm:p-3 rounded-full"
+            style={{ 
+                backgroundColor: isDarkMode ? '#2d2d2d' : '#ffffff',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)'
+            }}
+            aria-label="Toggle theme"
+        >
+            {isDarkMode ? (
+                <FaSun className="text-lg sm:text-xl text-yellow-400" />
+            ) : (
+                <FaMoon className="text-lg sm:text-xl text-gray-700" />
+            )}
+        </motion.button>
+    )
+}
+
+// Image Modal/Carousel Component
+function ImageModal({ images, isOpen, onClose, isDarkMode }) {
+    const [currentIndex, setCurrentIndex] = useState(0)
+    const [touchStart, setTouchStart] = useState(null)
+
+    const goToPrevious = () => {
+        setCurrentIndex(prev => prev === 0 ? images.length - 1 : prev - 1)
+    }
+
+    const goToNext = () => {
+        setCurrentIndex(prev => prev === images.length - 1 ? 0 : prev + 1)
+    }
+
+    const handleTouchStart = (e) => {
+        setTouchStart(e.touches[0].clientX)
+    }
+
+    const handleTouchEnd = (e) => {
+        if (!touchStart) return
+        const touchEnd = e.changedTouches[0].clientX
+        const diff = touchStart - touchEnd
+        
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) goToNext()
+            else goToPrevious()
+        }
+        setTouchStart(null)
+    }
+
+    useEffect(() => {
+        if (isOpen) setCurrentIndex(0)
+    }, [isOpen])
+
+    useEffect(() => {
+        if (!isOpen) return
+        
+        const handleKeyDown = (e) => {
+            if (e.key === 'ArrowLeft') goToPrevious()
+            if (e.key === 'ArrowRight') goToNext()
+            if (e.key === 'Escape') onClose()
+        }
+        
+        window.addEventListener('keydown', handleKeyDown)
+        return () => window.removeEventListener('keydown', handleKeyDown)
+    }, [isOpen, onClose])
+
+    const theme = {
+        bg: isDarkMode ? '#2d2d2d' : '#ffffff',
+        text: isDarkMode ? '#ffffff' : '#000000'
+    }
+
+    if (!isOpen) return null
+
+    return (
+        <AnimatePresence>
+            <motion.div
+                className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4"
+                variants={fadeIn}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                onClick={onClose}
+                style={{ 
+                    backgroundColor: 'rgba(5, 5, 5, 0.93)',
+                }}
+            >
+                <motion.button
+                    whileHover={{ scale: 1.1, backgroundColor: 'rgba(49, 49, 49, 0.98)' }}
+                    onClick={onClose}
+                    className="absolute top-2 right-2 sm:top-4 sm:right-4 p-2 sm:p-3 rounded-full z-50"
+                    aria-label="Close modal"
+                >
+                    <FaTimes className="text-xl sm:text-2xl text-black" />
+                </motion.button>
+
+                <motion.div
+                    className="relative max-w-6xl w-full mx-1 sm:mx-4"
+                    variants={fadeInUp}
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <div 
+                        className="relative rounded-2xl sm:rounded-3xl overflow-hidden"
+                        style={{ 
+                            backgroundColor: theme.bg
+                        }}
+                        onTouchStart={handleTouchStart}
+                        onTouchEnd={handleTouchEnd}
+                    >
+                        <AnimatePresence mode="wait">
+                            <motion.img
+                                key={currentIndex}
+                                src={images[currentIndex].src}
+                                alt={images[currentIndex].label}
+                                className="w-full h-auto max-h-[50vh] sm:max-h-[70vh] object-contain"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                            />
+                        </AnimatePresence>
+
+                        {images.length > 1 && (
+                            <motion.button
+                                whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.3)' }}
+                                onClick={goToPrevious}
+                                className="absolute left-1 sm:left-4 top-1/2 -translate-y-1/2 p-2 sm:p-3 rounded-full hidden sm:block"
+                                style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+                                aria-label="Previous image"
+                            >
+                                <IoIosArrowBack className="text-2xl sm:text-3xl text-white" />
+                            </motion.button>
+                        )}
+
+                        {images.length > 1 && (
+                            <motion.button
+                                whileHover={{ scale: 1.1, backgroundColor: 'rgba(255,255,255,0.3)' }}
+                                onClick={goToNext}
+                                className="absolute right-1 sm:right-4 top-1/2 -translate-y-1/2 p-2 sm:p-3 rounded-full hidden sm:block"
+                                style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+                                aria-label="Next image"
+                            >
+                                <IoIosArrowForward className="text-2xl sm:text-3xl text-white" />
+                            </motion.button>
+                        )}
+                    </div> 
+
+                    <motion.div 
+                        className="text-center mt-2 sm:mt-10"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.2 }}
+                    >
+                        <p className="text-base sm:text-lg font-semibold" style={{ color: theme.text }}>
+                            {images[currentIndex].label}
+                        </p>
+                        <p className="text-xs sm:text-sm mt-1" style={{ color: isDarkMode ? '#d8d8d8' : '#666666' }}>
+                            {currentIndex + 1} / {images.length}
+                        </p>
+                    </motion.div>
+                </motion.div>
+            </motion.div>
+        </AnimatePresence>
+    )
+}
+
+// Tech Badge Component
+function TechBadge({ name, icon, color }) {
+    return (
+        <span 
+            className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-medium"
+            style={{ 
+                backgroundColor: color,
+                color: '#ffffff',
+            }}
+        >
+            {icon}
+            {name}
+        </span>
+    )
+}
+
+// Image Card Component - Larger images with modal
+function ImageCard({ src, label, isDarkMode, onClick }) {
+    const theme = {
+        bg: isDarkMode ? '#2d2d2d' : '#ffffff',
+        border: isDarkMode ? '#4b5563' : '#e2e8f0',
+        text: isDarkMode ? '#ffffff' : '#000000'
+    }
+
+    return (
+        <motion.div
+            whileHover={{ scale: 1.02, y: -5 }}
+            whileTap={{ scale: 0.98 }}
+            className="flex flex-col items-center cursor-pointer"
+            onClick={onClick}
+        >
+            <div 
+                className="relative overflow-hidden rounded-2xl sm:rounded-3xl border p-2 sm:p-3"
+                style={{
+                    borderColor: theme.border,
+                    backgroundColor: theme.bg
+                }}
+            >
+                <img
+                    src={src}
+                    alt={label}
+                    className="w-full h-auto max-h-[300px] sm:max-h-[400px] object-contain rounded-xl"
+                />
+            </div>
+            {label && (
+                <p 
+                    className="mt-3 text-sm sm:text-base font-medium"
+                    style={{ color: theme.text }}
+                >
+                    {label}
+                </p>
+            )}
+        </motion.div>
+    )
+}
+
+// Project Section Component
+function ProjectSection({ 
+    title, 
+    description, 
+    images, 
+    onImageClick,
+    techStack,
+    gridCols = "grid-cols-2 sm:grid-cols-3"
+}) {
+    const [isDarkMode] = useState(true)
+    
+    const styles = {
+        heading: { color: isDarkMode ? '#ffffff' : '#000000' },
+        textMuted: { color: isDarkMode ? 'rgb(228, 228, 228)' : '#000000' },
+    }
+
+    return (
+        <motion.section 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="py-8 sm:py-10"
+        >
+            <div className="max-w-7xl mx-auto px-4 sm:px-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-center" style={styles.heading}>
+                    {title}
+                </h2>
+                
+                {description && (
+                    <p className="mt-4 text-sm sm:text-base text-center max-w-3xl mx-auto" style={styles.textMuted}>
+                        {description}
+                    </p>
+                )}
+
+                <div className={`mt-6 sm:mt-8 grid ${gridCols} gap-5 justify-items-center`}>
+                    {images.map((img, idx) => (
+                        <ImageCard 
+                            key={idx}
+                            src={img.src}
+                            label={img.label}
+                            isDarkMode={isDarkMode}
+                            onClick={() => onImageClick(images)}
+                        />
+                    ))}
+                </div>
+
+                {techStack && techStack.length > 0 && (
+                    <motion.div 
+                        className="flex flex-wrap gap-2 sm:gap-3 mt-6 sm:mt-8 justify-center"
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                    >
+                        {techStack.map((tech, idx) => (
+                            <TechBadge 
+                                key={idx} 
+                                name={tech.name} 
+                                icon={tech.icon} 
+                                color={tech.color} 
+                            />
+                        ))}
+                    </motion.div>
+                )}
+            </div>
+        </motion.section>
+    )
+}
+
+function GraphicContent() {
+    const location = useLocation()
+    const [isDarkMode, setIsDarkMode] = useState(true)
+    const [modalImages, setModalImages] = useState([])
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, [])
+    
+    useEffect(() => {
+        if (location.hash) {
+            const id = location.hash.replace('#', '')
+            const element = document.getElementById(id)
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' })
+            }
+        }
+    }, [location])
+
+    const styles = {
+        body: {
+            backgroundColor: isDarkMode ? '#222222' : '#f8fafc',
+            color: isDarkMode ? '#ffffff' : '#000000',
+            transition: 'background-color 0.3s ease, color 0.3s ease'
+        },
+        heading: { color: isDarkMode ? '#ffffff' : '#000000' },
+        textMuted: { color: isDarkMode ? 'rgb(228, 228, 228)' : '#000000' },
+        hr: { borderColor: isDarkMode ? '#4b5563' : '#e2e8f0' },
+    }
+
+    const openModal = (images) => {
+        setModalImages(images)
+        setIsModalOpen(true)
+    }
+
+    const closeModal = () => {
+        setIsModalOpen(false)
+    }
+
+    // Image Arrays
+    const houseImages = [
+        { src: house1, label: 'Outside' },
+        { src: house2, label: 'Bedroom' },
+        { src: house3, label: 'Living Room' },
+        { src: house4, label: 'Restroom' }
+    ]
+
+    const millerImages = [
+        { src: mill1, label: '' },
+        { src: mill2, label: '' },
+        { src: mill3, label: '' }
+    ]
+
+    const tetrapodsImages = [
+        { src: tetrapod1, label: '' },
+        { src: tetrapod2, label: '' },
+        { src: tetrapod3, label: '' },
+        { src: tetrapod4, label: '' }
+    ]
+
+    const pestImages = [
+        { src: pest1, label: '' },
+        { src: pest2, label: '' },
+        { src: pest3, label: '' },
+        { src: pest4, label: '' }
+    ]
+
+    const beehiveImages = [
+        { src: flowFrame1, label: '' },
+        { src: flowFrame2, label: '' },
+        { src: flowFrame3, label: '' },
+        { src: flowFrame4, label: '' }
+    ]
+
+    const mangrovesImages = [
+        { src: mangrove1, label: '' },
+        { src: mangrove2, label: '' },
+        { src: mangrove3, label: '' },
+        { src: mangrove4, label: '' }
+    ]
+
+    const shipImages = [
+        { src: ship1, label: '' },
+        { src: ship2, label: '' },
+        { src: ship3, label: '' }
+    ]
+
+    const posterImages = [
+        { src: poster3, label: '' },
+        { src: poster4, label: '' },
+        { src: poster5, label: '' },
+        { src: poster2, label: '' },
+        { src: poster1, label: '' },
+    ]
+
+    return (
+        <div className="min-h-screen font-sans" style={styles.body}>
+            <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+
+            <ImageModal 
+                images={modalImages} 
+                isOpen={isModalOpen} 
+                onClose={closeModal}
+                isDarkMode={isDarkMode}
+            />
+
+            {/* Header */}
+            <motion.div 
+                className="w-full px-4 sm:px-8 py-10 sm:py-14"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+            >
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
+                    <motion.h1 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2 }}
+                        className="text-3xl sm:text-5xl font-bold text-center"
+                        style={styles.heading}
+                                        >
+                        Graphic Designs
+                    </motion.h1>
+                    <motion.p 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                        className="mt-4 sm:mt-6 text-sm sm:text-base text-center opacity-80"
+                        style={styles.textMuted}
+                    >
+                        In this section, the documentation of my graphic design will be showcased. I accept commission projects in graphic design, including 2D, 3D, and poster design. I create these using Adobe Photoshop, Illustrator, Blender, and 3ds Max.
+                    </motion.p>
+                </div>
+            </motion.div>
+
+            <hr className="mx-8" style={styles.hr} />
+
+            {/* Projects */}
+            <div className="w-full px-4 sm:px-8 pb-12 sm:pb-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
+                    <div className="space-y-8 sm:space-y-16">
+                         
+
+                        {/* 3D House Rendered */}
+                        <ProjectSection
+                            title="3D House Rendered"
+                            images={houseImages}
+                            onImageClick={(images) => openModal(images)}
+                            gridCols="grid-cols-2 sm:grid-cols-4"
+                        />
+
+                        {/* Rice Miller */}
+                        <ProjectSection
+                            title="Rice Miller"
+                            images={millerImages}
+                            onImageClick={(images) => openModal(images)}
+                            gridCols="grid-cols-1 sm:grid-cols-3"
+                        />
+
+                        {/* Tetrapods */}
+                        <ProjectSection
+                            title="Tetrapods"
+                            images={tetrapodsImages}
+                            onImageClick={(images) => openModal(images)}
+                            gridCols="grid-cols-2 sm:grid-cols-4"
+                        />
+
+                        {/* Pest Repellant */}
+                        <ProjectSection
+                            title="Pest Repellant"
+                            images={pestImages}
+                            onImageClick={(images) => openModal(images)}
+                            gridCols="grid-cols-2 sm:grid-cols-4"
+                        />
+
+                        {/* BeeHive Flow Frames */}
+                        <ProjectSection
+                            title="BeeHive Flow Frames"
+                            images={beehiveImages}
+                            onImageClick={(images) => openModal(images)}
+                            gridCols="grid-cols-2 sm:grid-cols-4"
+                        />
+
+                        {/* Mangroves Planter */}
+                        <ProjectSection
+                            title="Mangroves Planter"
+                            images={mangrovesImages}
+                            onImageClick={(images) => openModal(images)}
+                            gridCols="grid-cols-2 sm:grid-cols-4"
+                        />
+
+                        {/* 3D Ship */}
+                        <ProjectSection
+                            title="3D Ship"
+                            images={shipImages}
+                            onImageClick={(images) => openModal(images)}
+                            gridCols="grid-cols-1 sm:grid-cols-3"
+                        />
+
+                        {/* Posters */}
+                        <ProjectSection
+                            title="Posters"
+                            description="I also experienced creating posters for our documentary and film project which was developed using Adobe Photoshop and Illustrator."
+                            images={posterImages}
+                            onImageClick={(images) => openModal(images)}
+                            gridCols="grid-cols-5 sm:grid-cols-5"
+                        />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default GraphicContent
