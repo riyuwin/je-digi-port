@@ -549,7 +549,7 @@ function WebDevContent() {
                                 "Responsive web application interface"
                             ]}
                             images={rapidImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/RAPID.git"
                             techStack={[
                                 { icon: <FaReact className="text-cyan-400" />, name: "React" },
                                 { icon: <SiFirebase className="text-yellow-400" />, name: "Firebase" },
@@ -571,7 +571,7 @@ function WebDevContent() {
                                 "User role management"
                             ]}
                             images={solviaImages}
-                            demoLink="#"
+                            demoLink="https://riyuwin.github.io/Solvia/"
                             techStack={[
                                 { icon: <FaReact className="text-cyan-400" />, name: "React" },
                                 { icon: <SiFirebase className="text-yellow-400" />, name: "Firebase" },
@@ -592,7 +592,7 @@ function WebDevContent() {
                                 "Contact Form Integration"
                             ]}
                             images={marahuyoImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/Marahuyo-Website.git"
                             techStack={[
                                 { icon: <SiPhp className="text-indigo-400" />, name: "PHP" },
                                 { icon: <SiHtml5 className="text-orange-500" />, name: "HTML" },
@@ -614,7 +614,7 @@ function WebDevContent() {
                                 "Leaflet/OpenStreetMap integration"
                             ]}
                             images={ascelisImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/ASCELIS_APP.git"
                             techStack={[
                                 { icon: <FaReact className="text-cyan-400" />, name: "React" },
                                 { icon: <SiFirebase className="text-yellow-400" />, name: "Firebase" },
@@ -635,7 +635,7 @@ function WebDevContent() {
                                 "Role-based Access Control"
                             ]}
                             images={hrmisImages}
-                            demoLink="#"
+                            demoLink="https://github.com/camicamiwave/HrAssist.git"
                             techStack={[
                                 { icon: <SiNodedotjs className="text-green-500" />, name: "Node.js" },
                                 { icon: <SiFirebase className="text-yellow-400" />, name: "Firebase" },
@@ -645,7 +645,7 @@ function WebDevContent() {
 
                         <ProjectSection
                             id="dong_tulong"
-                            title="Dong Tulong: Document Management System"
+                            title="Governor's Office: Document Management System"
                             description="The Dong Tulong is a Document Management System that digitizes office transactions. It features automated report generation capabilities, allowing users to produce Excel reports, PDFs, and charts."
                             features={[
                                 "Digitized Document Routing",
@@ -656,7 +656,7 @@ function WebDevContent() {
                                 "Search & Filter Capabilities"
                             ]}
                             images={dongTulongImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/PGCN.git"
                             techStack={[
                                 { icon: <FaReact className="text-cyan-400" />, name: "React" },
                                 { icon: <SiJavascript className="text-yellow-300" />, name: "JS" },
@@ -677,7 +677,7 @@ function WebDevContent() {
                                 "Export to Excel/CSV"
                             ]}
                             images={bitsconImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/BitsconAttendance.git"
                             techStack={[
                                 { icon: <FaReact className="text-cyan-400" />, name: "React" },
                                 { icon: <SiFirebase className="text-yellow-400" />, name: "Firebase" },
@@ -687,7 +687,7 @@ function WebDevContent() {
 
                         <ProjectSection
                             id="ceras"
-                            title="Clearance Information System (CERAS)"
+                            title="Clearance Information System (CLEAR)"
                             description="The system is a clearance information system that automates the traditional clearance process within school premises. This web application streamlines the submission, tracking, and approval of student clearances."
                             features={[
                                 "Animated Clearance Workflow",
@@ -698,7 +698,7 @@ function WebDevContent() {
                                 "Clearance History"
                             ]}
                             images={cerasImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/Clearance-Management-System.git"
                             techStack={[
                                 { icon: <FaLaravel className="text-red-500" />, name: "Laravel" },
                                 { icon: <SiPhp className="text-indigo-400" />, name: "PHP" },

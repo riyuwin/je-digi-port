@@ -596,7 +596,7 @@ function MobAppContent() {
                             description="The Jeepney Dash is a commissioned project that aims to showcase the jeepney culture in game application. The game has two modes: endless driving and mission mode."
                             features={["Endless driving mode", "Mission mode", "Day/Night cycle", "3D game assets", "Touch controls", "Game scoring system"]}
                             images={jeepneyImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/JeepneyDash.git"
                             techStack={[
                                 { icon: <FaUnity />, name: "Unity", color: "#000000" }, 
                                 { icon: <FaCode />, name: "C#", color: "#68217A" }
@@ -609,7 +609,7 @@ function MobAppContent() {
                             description="E-Tap was designed as a one-tap emergency system that instantly alerts authorities in real time."
                             features={["One-tap emergency alert", "Real-time location tracking", "Cross-user functionality", "Hotline directory", "Real-time messaging", "OpenStreetMap integration"]}
                             images={etapImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/E-TAP.git"
                             techStack={[
                                 { icon: <FaAndroid />, name: "Android", color: "#3DDC84" }, 
                                 { icon: <FaJava />, name: "Java", color: "#007396" }, 
@@ -623,7 +623,7 @@ function MobAppContent() {
                             description="Beemax is an IoT System that displays realtime data coming from the sensors of Beehives."
                             features={["Temperature monitoring", "Humidity monitoring", "Weight monitoring", "Real-time alerts", "Historical data logs", "Firebase integration"]}
                             images={beemaxImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/Beemax.git"
                             techStack={[
                                 { icon: <FaAndroid />, name: "Android", color: "#3DDC84" }, 
                                 { icon: <FaJava />, name: "Java", color: "#007396" }, 
@@ -637,7 +637,7 @@ function MobAppContent() {
                             description="Solqua Smart Filtration app is an IoT System that displays realtime data coming from the sensors of Water Filtration System."
                             features={["pH level monitoring", "Temperature monitoring", "Humidity monitoring", "Image processing", "Real-time notifications", "Water quality analysis"]}
                             images={sfsImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/Solqua-Smart-Filtration-System.git"
                             techStack={[
                                 { icon: <FaAndroid />, name: "Android", color: "#3DDC84" }, 
                                 { icon: <FaJava />, name: "Java", color: "#007396" }, 
@@ -651,7 +651,7 @@ function MobAppContent() {
                             description="A web and mobile-based computational system designed to model and calculate crop damage in flood-affected farmland."
                             features={["Flood modeling calculation", "Crop damage assessment", "Mobile-responsive design", "Data export capabilities", "Real-time updates", "Role-based access"]}
                             images={solviaMobileImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/Solvia.git"
                             techStack={[
                                 { icon: <FaReact />, name: "React", color: "#61DAFB" }, 
                                 { icon: <FaAndroid />, name: "Android", color: "#3DDC84" }, 
@@ -665,7 +665,7 @@ function MobAppContent() {
                             description="The CNSC 3D Map is a commissioned capstone project that aims to simulate earthquake evacuation routes and to visualize in 3D perspective."
                             features={["3D campus visualization", "Evacuation route simulation", "Interactive navigation", "Building details management", "Earthquake simulation", "Real-time pathfinding"]}
                             images={safemapImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/CNSC-3D-SAFEMAP.git"
                             techStack={[
                                 { icon: <FaUnity />, name: "Unity", color: "#000000" }, 
                                 { icon: <FaCode />, name: "C#", color: "#68217A" }
@@ -691,7 +691,7 @@ function MobAppContent() {
                             description="The digitalization of the Legend Story of Busig-On in Labo, Camarines Norte was my first commissioned thesis project."
                             features={["Legend story narration", "Interactive reading", "Audio playback", "Video visualization", "Multi-language support", "Offline access"]}
                             images={busigonImages}
-                            demoLink="#"
+                            demoLink="https://github.com/riyuwin/Busig-On.git"
                             techStack={[
                                 { icon: <FaAndroid />, name: "Android", color: "#3DDC84" }, 
                                 { icon: <FaJava />, name: "Java", color: "#007396" }
