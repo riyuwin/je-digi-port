@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 
 // RAPID
@@ -52,7 +52,7 @@ import covtrack from '/img/covtrack.png'
 import cnshsAdmission from '/img/cnshs_admission.png'
 
 // ICONS
-import { FaLaravel, FaReact, FaMoon, FaSun, FaTimes } from 'react-icons/fa'
+import { FaLaravel, FaReact, FaMoon, FaSun, FaTimes, FaArrowLeft } from 'react-icons/fa'
 import { SiCss, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiTailwindcss, SiDjango, SiPhp, SiNodedotjs } from 'react-icons/si'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
@@ -397,6 +397,26 @@ function WebDevContent() {
         { src: bitscon2, label: 'Attendance Monitoring' }
     ]
 
+    function BackButton() {
+        const navigate = useNavigate()
+        
+        return (
+            <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => navigate(-1)}
+                className="fixed top-4 left-4 z-50 p-2 sm:p-3 rounded-full"
+                style={{ 
+                    backgroundColor: '#2d2d2d',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)'
+                }}
+                aria-label="Go back"
+            >
+                <FaArrowLeft className="text-lg sm:text-xl text-white" />
+            </motion.button>
+        )
+    }
+
     // Reusable Project Section Component
     const ProjectSection = ({ 
         id, 
@@ -489,6 +509,7 @@ function WebDevContent() {
 
     return (
         <div className="min-h-screen font-sans" style={styles.body}>
+            <BackButton />
             <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
             <ImageModal 
@@ -549,7 +570,7 @@ function WebDevContent() {
                                 "Responsive web application interface"
                             ]}
                             images={rapidImages}
-                            demoLink="https://github.com/riyuwin/RAPID.git"
+                            demoLink="https://cnshs-rapid-app.netlify.app/"
                             techStack={[
                                 { icon: <FaReact className="text-cyan-400" />, name: "React" },
                                 { icon: <SiFirebase className="text-yellow-400" />, name: "Firebase" },

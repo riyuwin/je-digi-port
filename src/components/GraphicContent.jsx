@@ -1,11 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 
 // ICONS
-import { FaMoon, FaSun, FaTimes, FaCube } from 'react-icons/fa'
+import { FaMoon, FaSun, FaTimes, FaCube, FaArrowLeft } from 'react-icons/fa'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 
 // IMAGES - 3D HOUSE RENDERED
@@ -88,6 +88,26 @@ function ThemeToggle({ isDarkMode, setIsDarkMode }) {
         </motion.button>
     )
 }
+
+function BackButton() {
+        const navigate = useNavigate()
+        
+        return (
+            <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => navigate(-1)}
+                className="fixed top-4 left-4 z-50 p-2 sm:p-3 rounded-full"
+                style={{ 
+                    backgroundColor: '#2d2d2d',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)'
+                }}
+                aria-label="Go back"
+            >
+                <FaArrowLeft className="text-lg sm:text-xl text-white" />
+            </motion.button>
+        )
+    }
 
 // Image Modal/Carousel Component
 function ImageModal({ images, isOpen, onClose, isDarkMode }) {
@@ -461,6 +481,7 @@ function GraphicContent() {
 
     return (
         <div className="min-h-screen font-sans" style={styles.body}>
+            <BackButton />
             <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
             <ImageModal 

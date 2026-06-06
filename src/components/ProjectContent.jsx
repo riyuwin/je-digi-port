@@ -1,12 +1,12 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 // ICONS
-import { FaMoon, FaSun } from 'react-icons/fa'
+import { FaMoon, FaSun, FaArrowLeft  } from 'react-icons/fa'
 
 // IMAGES
 import webAppBg from '/img/web_app_bg.png'
@@ -34,6 +34,26 @@ function ThemeToggle({ isDarkMode, setIsDarkMode }) {
             ) : (
                 <FaMoon className="text-lg sm:text-xl text-gray-700" />
             )}
+        </motion.button>
+    )
+}
+
+function BackButton() {
+    const navigate = useNavigate()
+    
+    return (
+        <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => navigate(-1)}
+            className="fixed top-4 left-4 z-50 p-2 sm:p-3 rounded-full"
+            style={{ 
+                backgroundColor: '#2d2d2d',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)'
+            }}
+            aria-label="Go back"
+        >
+            <FaArrowLeft className="text-lg sm:text-xl text-white" />
         </motion.button>
     )
 }
@@ -104,6 +124,7 @@ function ProjectContent() {
 
     return (
         <div className="min-h-screen font-sans" style={styles.body}>
+            <BackButton />
             <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
             {/* Header */}
