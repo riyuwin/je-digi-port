@@ -716,13 +716,15 @@ export default function MainContent() {
 
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                             <motion.a
-                                href="mailto:johnerwinalbos@gmail.com"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=johnerwinalbos@gmail.com&su=Portfolio%20Inquiry&body=Hello%20John%2C%0A%0AI%20would%20like%20to%20discuss..."
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="flex items-center gap-2 px-6 py-3 bg-blue-600 !text-white rounded-full shadow hover:bg-blue-700 transition"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                            >
+                                >
                                 <FaEnvelope /> Email Me
-                            </motion.a>
+                                </motion.a>
                             <motion.a
                                 href="https://github.com/riyuwin"
                                 target="_blank"
